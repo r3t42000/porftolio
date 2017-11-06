@@ -1,0 +1,67 @@
+/*-------------------------*/
+
+$color_primary: #E4C76B
+$color_secondary: #4C8A6B
+$color_white: #DCDCDD
+
+*
+    vertical-align: top
+header.section
+    background-color: $color_primary
+
+.section
+    width: 100%
+    // height: 100vh
+    background-color: $color_secondary
+.title_box
+    padding: 50px 0px
+    .title
+        min-width: 200px
+        height: 40px
+        text-align: center
+        line-height: 40px
+        display: inline-block
+        border-bottom: 2px solid $color_primary
+        left: 50%
+        transform: translate(-50%)
+        border-radius: 30px
+        color: $color_primary
+.works
+        width: 100%
+        font-size: 0
+        contain
+        margin: 100px 0px
+        // background: $color_primary
+        *
+            // border: solid 1px black
+        .wrok_box
+            > *
+                left: 50%
+                transform: translateX(-50%)
+            .work_pic
+                width: 80%
+                padding-top: 80%
+                position: relative
+                height: 0
+                .image
+                    position: absolute
+                    left: 50%
+                    bottom: 0
+                    transform: translateX(-50%)
+                    max-width: 100%
+                    max-height: 100%
+                    border-radius: 10px
+                    box-shadow: 0px 0px 2px $color_primary
+            .wrok_descriptrion
+                max-width: 80%
+                color: black
+                font-size: 15px
+                text-align: center
+                margin-top: 10px
+                border-radius: 20px
+                padding: 10px 80px
+                color: $color_primary
+                letter-spacing: 3px
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title freakylan
+    link(rel="stylesheet", href="../css/reset.css")
+    link(rel="stylesheet", href="../css/layout.css")
+    link(rel="stylesheet", href="../css/freakylan.css")
+body
+    .wrapper#freakylan
+        .section
+            .container
+                .title_box
+                    .title Freaklylan
+            .works
+                    .container
+                        .workbox(v-for="f in freakylan_datas ")
+                            .work_pic
+                                img(:src="f.img", alt="")
+                            .work_name {{f.name}}
+
+
+    script(src="../js/jquery.js")
+    script(src="../js/vue.js")
+    script(src="../js/freakylan.js")
+
+
+

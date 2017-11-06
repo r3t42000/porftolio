@@ -1,0 +1,63 @@
+/*-------------------------*/
+* {
+  vertical-align: top; }
+
+header.section {
+  background-color: #E4C76B; }
+
+.section {
+  width: 100%;
+  background-color: #4C8A6B; }
+
+.title_box {
+  padding: 50px 0px; }
+  .title_box .title {
+    min-width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    border-bottom: 2px solid #E4C76B;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    border-radius: 30px;
+    color: #E4C76B; }
+
+.works {
+  width: 100%;
+  font-size: 0;
+  margin: 100px 0px; }
+  .works .wrok_box > * {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .works .wrok_box .work_pic {
+    width: 80%;
+    padding-top: 80%;
+    position: relative;
+    height: 0; }
+    .works .wrok_box .work_pic .image {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 2px #E4C76B;
+      box-shadow: 0px 0px 2px #E4C76B; }
+  .works .wrok_box .wrok_descriptrion {
+    max-width: 80%;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px 80px;
+    color: #E4C76B;
+    letter-spacing: 3px; }

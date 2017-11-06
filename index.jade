@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title LAN'S PROFTOLIO
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/base.css")
+    link(rel="stylesheet", href="css/layout.css")
+    link(rel="stylesheet", href="css/component.css")
+body
+    .wrapper#proftolio
+        header.section
+            .container
+                .title_box
+                    .title
+            .gif_box
+                img.gif(src="image/lan.gif", alt="")
+            h3.name CHIA CHI LAN
+        .section.sec_character
+            .container
+                .title_box
+                    .title Characteristics
+                .row.character_boxs
+                    .character_box.col-sm-4
+                        img(src="image/image-01.svg", alt="").box_icon
+                        .box_title 跨領域學習能力
+
+                        .box_text  擁有理工、設計背景，自我追求技術的提升與策略性思考，重視以開放的態度學習新知。目前計畫學習前端開發領域、網頁效能的優化以及精進使用者經驗的思考。
+
+
+
+                    .character_box.col-sm-4
+                        img(src="image/image-02.svg", alt="").box_icon
+                        .box_title 溝通與整合能力
+
+                        .box_text 善於團體合作與專案管理，並喜歡研究各項工具，認為工具是一個可將想法有效率及忠實呈現的利器和載具。
+
+                    .character_box.col-sm-4
+                        img(src="image/image-03.svg", alt="").box_icon
+                        .box_title 喜愛分享與挑戰
+
+                        .box_text 對於未知的領域喜歡嘗試與深入研究，時常為了有趣的想法赴湯蹈火，並樂於分享心得及教學相長。
+        //-$sec_exprience
+        .section.sec_exprience
+            .title_box
+                .title Eeprience
+
+            .block
+                img.mountain(src="image/mountaine-12.svg", alt="")
+                .container
+                    .row
+                        .col-sm-4.exprience_box.box1
+                            .box_number 1
+                            .box_title 立城都市計畫公司
+                                span 規劃師
+                            li.box_text 規劃市地重劃區公共設施並執行專案管理
+                            li.box_text 物聯網設計發想
+                        .col-sm-4.exprience_box.box2
+                            .box_number 2
+                            .box_title 大誠設計
+                                span 設計師
+                            li.box_text  CI設計
+                            li.box_text 畫冊編排
+                            li.box_text  藝術品圖像校色
+                            li.box_text 印刷品質管理
+                        .col-sm-4.exprience_box.box3
+                            .box_number 3
+                            .box_title 其他參與
+                            li.box_text  成大頂樓影展籌辦
+                            li.box_text  pappa店家 空間規劃
+                            li.box_text  「畫不出美的線條」展
+
+
+
+        //- $sec_work
+        .section.sec_work
+            .container_fluid
+                .title_box
+                    .title Works
+                .work_nav
+                    .work_nav_item.active(@click="work_click(web,0)")  Web
+                    .work_nav_item(@click="work_click(illustration,1)")    Graphic
+                .works
+                    .container
+                       a(:href="i.url" target="_blank").workbox(v-for="i in now_data")
+                            .work_pic
+                                img.image(:src="i.image", alt="")
+                            .work_name {{i.name}}
+        .section.sec_life
+            .container
+                .title_box
+                    .title Life
+                .row
+                    .col-sm-8.col-sm-push-1.col-12
+                        .info
+                            h4 電影
+                            p 多次參與短片拍攝之製片與美術，曾於台南39小時限時拍片競賽獲獎
+                            h4 音樂
+                            p 喜愛饒舌、後搖、藍調與實驗性曲風等，對於音樂與新媒整合型藝術表驗為之瘋狂。
+                            p 擅長樂器為鋼琴與吉他
+                    .col-sm-4.sing_box
+                        img.sing(src="image/sing.svg", alt="")
+        //- $sec_contact
+        .section.sec_contact
+            .container
+                .title_box
+                    .title Contact
+                .contactbox
+                    img(src="image/lan.png", alt="").picture
+                    .infobox
+                        .info 0935858257
+                        .info r3t42000@gmail.com
+            .pagetop_button
+
+    script(src="js/jquery.js")
+    script(src="js/vue.js")
+    script(src="js/proftolio.js")

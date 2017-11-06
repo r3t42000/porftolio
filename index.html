@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>LAN'S PROFTOLIO</title>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/component.css"/>
+</head>
+<body>
+  <div class="wrapper" id="proftolio">
+    <header class="section">
+      <div class="container">
+        <div class="title_box">
+          <div class="title"></div>
+        </div>
+      </div>
+      <div class="gif_box"><img class="gif" src="image/lan.gif" alt=""/></div>
+      <h3 class="name">CHIA CHI LAN</h3>
+    </header>
+    <div class="section sec_character">
+      <div class="container">
+        <div class="title_box">
+          <div class="title">Characteristics</div>
+        </div>
+        <div class="row character_boxs">
+          <div class="character_box col-sm-4"><img class="box_icon" src="image/image-01.svg" alt=""/>
+            <div class="box_title">跨領域學習能力</div>
+            <div class="box_text"> 擁有理工、設計背景，自我追求技術的提升與策略性思考，重視以開放的態度學習新知。目前計畫學習前端開發領域、網頁效能的優化以及精進使用者經驗的思考。</div>
+          </div>
+          <div class="character_box col-sm-4"><img class="box_icon" src="image/image-02.svg" alt=""/>
+            <div class="box_title">溝通與整合能力</div>
+            <div class="box_text">善於團體合作與專案管理，並喜歡研究各項工具，認為工具是一個可將想法有效率及忠實呈現的利器和載具。</div>
+          </div>
+          <div class="character_box col-sm-4"><img class="box_icon" src="image/image-03.svg" alt=""/>
+            <div class="box_title">喜愛分享與挑戰</div>
+            <div class="box_text">對於未知的領域喜歡嘗試與深入研究，時常為了有趣的想法赴湯蹈火，並樂於分享心得及教學相長。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section sec_exprience">
+      <div class="title_box">
+        <div class="title">Eeprience</div>
+      </div>
+      <div class="block"><img class="mountain" src="image/mountaine-12.svg" alt=""/>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 exprience_box box1">
+              <div class="box_number">1</div>
+              <div class="box_title">立城都市計畫公司<span>規劃師</span></div>
+              <li class="box_text">規劃市地重劃區公共設施並執行專案管理</li>
+              <li class="box_text">物聯網設計發想</li>
+            </div>
+            <div class="col-sm-4 exprience_box box2">
+              <div class="box_number">2</div>
+              <div class="box_title">大誠設計<span>設計師</span></div>
+              <li class="box_text"> CI設計</li>
+              <li class="box_text">畫冊編排</li>
+              <li class="box_text"> 藝術品圖像校色</li>
+              <li class="box_text">印刷品質管理</li>
+            </div>
+            <div class="col-sm-4 exprience_box box3">
+              <div class="box_number">3</div>
+              <div class="box_title">其他參與</div>
+              <li class="box_text"> 成大頂樓影展籌辦</li>
+              <li class="box_text"> pappa店家 空間規劃</li>
+              <li class="box_text"> 「畫不出美的線條」展</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section sec_work">
+      <div class="container_fluid">
+        <div class="title_box">
+          <div class="title">Works</div>
+        </div>
+        <div class="work_nav">
+          <div class="work_nav_item active" @click="work_click(web,0)"> Web</div>
+          <div class="work_nav_item" @click="work_click(illustration,1)">   Graphic</div>
+        </div>
+        <div class="works">
+          <div class="container"><a class="workbox" :href="i.url" target="_blank" v-for="i in now_data">
+              <div class="work_pic"><img class="image" :src="i.image" alt=""/></div>
+              <div class="work_name">{{i.name}}</div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="section sec_life">
+      <div class="container">
+        <div class="title_box">
+          <div class="title">Life</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-push-1 col-12">
+            <div class="info">
+              <h4>電影</h4>
+              <p>多次參與短片拍攝之製片與美術，曾於台南39小時限時拍片競賽獲獎</p>
+              <h4>音樂</h4>
+              <p>喜愛饒舌、後搖、藍調與實驗性曲風等，對於音樂與新媒整合型藝術表驗為之瘋狂。</p>
+              <p>擅長樂器為鋼琴與吉他</p>
+            </div>
+          </div>
+          <div class="col-sm-4 sing_box"><img class="sing" src="image/sing.svg" alt=""/></div>
+        </div>
+      </div>
+    </div>
+    <div class="section sec_contact">
+      <div class="container">
+        <div class="title_box">
+          <div class="title">Contact</div>
+        </div>
+        <div class="contactbox"><img class="picture" src="image/lan.png" alt=""/>
+          <div class="infobox">
+            <div class="info">0935858257</div>
+            <div class="info">r3t42000@gmail.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="pagetop_button"></div>
+    </div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/proftolio.js"></script>
+</body>

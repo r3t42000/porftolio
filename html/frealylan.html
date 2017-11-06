@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>freakylan</title>
+  <link rel="stylesheet" href="../css/reset.css"/>
+  <link rel="stylesheet" href="../css/layout.css"/>
+  <link rel="stylesheet" href="../css/freakylan.css"/>
+</head>
+<body>
+  <div class="wrapper" id="freakylan">
+    <div class="section">
+      <div class="container">
+        <div class="title_box">
+          <div class="title">Freaklylan</div>
+        </div>
+      </div>
+      <div class="works">
+        <div class="container">
+          <div class="workbox" v-for="f in freakylan_datas ">
+            <div class="work_pic"><img :src="f.img" alt=""/></div>
+            <div class="work_name">{{f.name}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/vue.js"></script>
+  <script src="../js/freakylan.js"></script>
+</body>

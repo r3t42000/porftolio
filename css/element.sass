@@ -1,0 +1,93 @@
+/*-------------------------*/
+
+$color_primary: #E4C76B
+$color_secondary: #4C8A6B
+$color_white: #DCDCDD
+
+*
+    vertical-align: top
+.wrapper#freakylan
+    background-color: $color_secondary
+header.section
+    background-color: $color_primary
+
+.section
+    width: 100%
+    background-color: $color_secondary
+.title_box
+    padding: 50px 0px
+    .title
+        min-width: 200px
+        height: 40px
+        text-align: center
+        line-height: 40px
+        display: inline-block
+        border-bottom: 2px solid $color_primary
+        left: 50%
+        transform: translate(-50%)
+        border-radius: 30px
+        color: $color_primary
+.works
+        width: 100%
+        font-size: 0
+        contain
+        padding: 100px 0px
+        *
+            // border: solid 1px black
+        .workbox
+            display: inline-block
+            width: calc((100% - 240px) / 4)
+            max-width: 250px
+            margin: 30px
+            cursor: pointer
+            background-color: $color_primary
+            border-radius: 5px
+            &:hover
+                .work_pic:after
+                    content: "ccccc"
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    left: 0
+                    top: 0
+                    background-color: rgba($color_primary,0.6)
+        .work_pic
+            width: 100%
+            padding-top: 100%
+            border-radius: 5px
+
+            -webkit-background-size: 100%
+            -moz-background-size: 100%
+            background-size: 100%
+            position: relative
+            overflow: hidden
+            img
+                width: 100%
+                position: absolute
+                left: 0
+                top: 0
+                height: 100%
+        .work_name
+            color: black
+            font-size: 15px
+            text-align: center
+            padding: 20px 10px
+            color: $color_secondary
+            line-height: 30px
+            letter-spacing: 1px
+@media (max-width: 992px)
+    .works
+        .workbox
+            width: calc((100% - 180px) / 3)
+
+@media (max-width: 768px)
+    .works
+        .workbox
+            width: calc((100% - 120px) / 2)
+@media (max-width: 480px)
+    .works
+        .workbox
+            width: calc(100%)
+            margin: 40px 0px
+            left: 50%
+            transform: translateX(-50%)
