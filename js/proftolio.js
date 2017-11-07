@@ -25,12 +25,12 @@ var illustration_datas =[
 {
  name: "Freakylan",
  image: "image/freakylan/1.png",
- url: "/html/frealylan.html",
+ url: "/porftolio/html/freakylan",
 },
 {
  name: "Pappa",
  image: "image/works_image/pappa.png",
- url: "/html/pappa.html",
+ url: "/porftolio/html/pappa",
 },
 ];
 $(document).ready(function(){
