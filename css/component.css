@@ -318,9 +318,12 @@ header.section {
   .section.sec_life .info h4 {
     color: #E4C76B;
     font-weight: 400;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-size: 22px; }
   .section.sec_life .info p {
-    color: #DCDCDD; }
+    color: #DCDCDD;
+    letter-spacing: 1px;
+    font-size: 16px; }
 
 .sing_box {
   padding: 100px;
