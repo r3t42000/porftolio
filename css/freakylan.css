@@ -37,7 +37,6 @@ header.section {
     width: calc((100% - 240px) / 4);
     max-width: 250px;
     margin: 30px;
-    cursor: pointer;
     background-color: #E4C76B;
     border-radius: 5px; }
     .works .workbox:hover .work_pic:after {

@@ -258,20 +258,29 @@ header.section
             text-align: center
             padding: 20px 0px
             color: $color_secondary
-
+@media (max-width: 992px)
+     .sec_work
+        .works
+            .workbox
+                width: 50%
 @media (max-width: 768px)
     .sec_work
         .work_nav
             left: 50%
             .work_nav_item
                 display: block
+
         .works
             margin: 0px 0px
+            .container
+                display: flex
+                flex-direction: column
+                // justify-content: center
             .workbox
                 width: 50%
                 margin: 0
                 display: block
-
+                width: 100%
                 margin-bottom: 20px
                 left: 50%
                 transform: translateX(-50%)

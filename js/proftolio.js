@@ -7,18 +7,14 @@ var web_datas = [
 {
  name: "What i prefer",
  image: "image/works_image/movie.png",
- url: "",
+ url: "https://r3t42000.github.io/movie/",
 },
 {
  name: "Password",
  image: "image/works_image/password.png",
  url: "https://s.codepen.io/lan_zai/debug/VWxLNP/PNrvYLRKQDNM",
 },
-{
- name: "Password",
- image: "image/works_image/password.png",
- url: "https://s.codepen.io/lan_zai/debug/VWxLNP/PNrvYLRKQDNM",
-},
+
 ];
 var illustration_datas =[
 

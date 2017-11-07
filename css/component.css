@@ -273,6 +273,10 @@ header.section {
     padding: 20px 0px;
     color: #4C8A6B; }
 
+@media (max-width: 992px) {
+  .sec_work .works .workbox {
+    width: 50%; } }
+
 @media (max-width: 768px) {
   .sec_work .work_nav {
     left: 50%; }
@@ -280,10 +284,21 @@ header.section {
       display: block; }
   .sec_work .works {
     margin: 0px 0px; }
+    .sec_work .works .container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
     .sec_work .works .workbox {
       width: 50%;
       margin: 0;
       display: block;
+      width: 100%;
       margin-bottom: 20px;
       left: 50%;
       -webkit-transform: translateX(-50%);
